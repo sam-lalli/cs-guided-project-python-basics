@@ -8,6 +8,13 @@ Examples:
 - string_int("1000") ➞ 1000
 - string_int("12") ➞ 12
 """
-def string_int(txt):
-    # Your code here
+# Input: strings, Output: int, type change needed
 
+def string_int(txt):
+    return int(txt)
+
+
+#Examples
+print(string_int("6"))
+print(string_int("1000"))
+print(string_int("12"))
