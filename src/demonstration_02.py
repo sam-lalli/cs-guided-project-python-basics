@@ -9,5 +9,13 @@ Examples:
 - convert(2) ➞ 120
 """
 def convert(minutes):
-    # Your code here
+    # Input: int, Output: int, no type conversion
+    # 60 seconds in a minute
+    return minutes * 60
+
+#Examples
+print(convert(5))
+print(convert(3))
+print(convert(2))
+
 

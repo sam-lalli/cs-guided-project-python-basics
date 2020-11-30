@@ -11,6 +11,20 @@ Examples:
 - nth_smallest([1, 3, 5, 7], 5) ➞ None
 - nth_smallest([7, 3, 5, 1], 2) ➞ 3
 """
+
+# sort list in ascending order, return n list element
+# need to handle index out of range example
 def nth_smallest(lst, n):
-    # Your code here
+    # because list is int, default ascending order
+    if n <= len(lst):
+        lst.sort()
+        return lst[n-1] #examples have list starting at 1 index instead of 0
+    else:
+        return None
+
+
+print(nth_smallest([7, 5, 3, 1], 1))
+print(nth_smallest([1, 3, 5, 7], 3))
+print(nth_smallest([1, 3, 5, 7], 5))
+print(nth_smallest([7, 3, 5, 1], 2))
 
